@@ -11,15 +11,7 @@ const eqArrays = function(arrOne, arrTwo) {
 };
 
 const assertArraysEqual = function(arrOne, arrTwo) {
-  let ans = Boolean(0);
-  for (let x = 0; x < arrOne.length; x++) {
-    if (arrOne[x] === arrTwo[x]) {
-      ans = Boolean(1);
-    } else {
-      ans = Boolean(0);
-    }
-  }
-  if (ans !== Boolean(0)) {
+if (eqArrays(arrOne, arrTwo) === true){
     console.log("true");
   } else {
     console.log("false");
