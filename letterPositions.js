@@ -41,7 +41,7 @@ const letterPositions = function(sentence) {
 
 letterPositions("Hi Macky, Macky");
 const hAns = letterPositions("Hi Macky");
-// console.log(hAns['H']);
+
 //ASSERT CODE
 
 assertArraysEqual(letterPositions("Hi Macky, Macky").M, [3,10]); // False
