@@ -1,4 +1,4 @@
-//Test/Assertion functions
+//Test Assertion functions
 
 const eqArrays = function(arr1,arr2) {
   if (arr1.length !== arr2.length) {
@@ -13,8 +13,6 @@ const eqArrays = function(arr1,arr2) {
   return true;
 };
 
-
-// ACTUAL FUNCTION
 const assertArraysEqual = function(arrOne, arrTwo) {
   if (eqArrays(arrOne, arrTwo) === true) {
     console.log("true");
@@ -23,6 +21,7 @@ const assertArraysEqual = function(arrOne, arrTwo) {
   }
 };
 
+// ACTUAL FUNCTION
 const middle = function(arr) {
   let answerMiddleArray = [];
   let middleIndex = Math.floor(arr.length / 2);
@@ -40,10 +39,5 @@ const middle = function(arr) {
 
 middle([1,2,3,4,5,6,7,8,9]);
 
-//TEST CODE
+module.exports = middle;
 
-assertArraysEqual(middle([1,2,3,4,5,6,7,8,9]),[5]); //true
-assertArraysEqual(middle([1,2,3,4,5,6,7,8,9]),[6]); //false
-assertArraysEqual(middle([0,1]), []); //true
-assertArraysEqual(middle([0,1]), [1,0]); //false
-assertArraysEqual(middle([0,1,3,4]), [1,3]); //true
