@@ -39,6 +39,8 @@ const letterPositions = function(sentence) {
 };
 
 
+module.exports = letterPositions;
+
 letterPositions("Hi Macky, Macky");
 const hAns = letterPositions("Hi Macky");
 

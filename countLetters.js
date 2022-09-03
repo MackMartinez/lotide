@@ -1,11 +1,11 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// // FUNCTION IMPLEMENTATION
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`🟢🟢🟢Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 
 const countLetters = function(sentence) {
   let ansCounter = {};
@@ -22,4 +22,6 @@ const countLetters = function(sentence) {
   return ansCounter;
 };
 
-countLetters("Macky Martinez");
+module.exports = countLetters;
+
+// countLetters("Macky Martinez");
