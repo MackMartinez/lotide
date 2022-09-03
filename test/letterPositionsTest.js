@@ -1,6 +1,7 @@
 const assert = require('chai').assert
 const letterPositions = require('../letterPositions')
 
+
 //ASSERT CODE
 describe("#letterPositions", () => {
   it("returns false for letterPositions(Hi Macky, Macky).M, [3,10]", () => {
