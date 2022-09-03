@@ -1,4 +1,5 @@
 const assertEqual = require("../assertEqual");
+const countOnly = require('../countOnly');
 
 const firstNames = [
   "Karl",

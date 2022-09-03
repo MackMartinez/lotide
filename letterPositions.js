@@ -1,26 +1,3 @@
-//TEST CODE
-const eqArrays = function(arr1,arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let x = 0; x < arr1.length; x++) {
-    if (arr1[x] !== arr2[x]) {
-      
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arrOne, arrTwo) {
-  if (eqArrays(arrOne, arrTwo) === true) {
-    console.log("true");
-  } else {
-    console.log("false");
-  }
-};
-
-
 //ACTUAL CODE
 const letterPositions = function(sentence) {
   const results = {};
@@ -41,12 +18,3 @@ const letterPositions = function(sentence) {
 
 module.exports = letterPositions;
 
-letterPositions("Hi Macky, Macky");
-const hAns = letterPositions("Hi Macky");
-
-//ASSERT CODE
-
-assertArraysEqual(letterPositions("Hi Macky, Macky").M, [3,10]); // False
-assertArraysEqual(hAns['H'], [0]); // True
-assertArraysEqual(hAns['H'], [0,2]); // False
-assertArraysEqual(hAns, {H: [ 0 ], i: [ 1 ], M: [ 3 ],a: [ 4 ], c: [ 5 ],k: [ 6 ],y: [ 7 ]}); // True
